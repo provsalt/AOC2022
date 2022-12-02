@@ -2,7 +2,6 @@ package Day2
 
 import (
 	"fmt"
-	"github.com/davecgh/go-spew/spew"
 	"strings"
 )
 
@@ -28,7 +27,6 @@ func Run(input string) {
 	for _, round := range rounds {
 		choices := strings.Split(round, " ")
 		score := rps(charToChoice[choices[0]], charToChoice[choices[1]])
-		//spew.Dump(score)
 		totalScore += score
 	}
 	fmt.Printf("Total score: %d\n", totalScore)
@@ -68,7 +66,6 @@ func Run(input string) {
 			}
 			return 0
 		}()
-		spew.Dump(score)
 		totalScore += score
 	}
 	fmt.Printf("Total score: %d", totalScore)
