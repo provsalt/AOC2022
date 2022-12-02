@@ -1,18 +1,13 @@
-package main
+package Day1
 
 import (
 	"fmt"
-	"os"
 	"strconv"
 	"strings"
 )
 
-func day1() {
-	data, err := os.ReadFile("day1_input.txt")
-	if err != nil {
-		panic(err)
-	}
-	data2 := strings.Split(string(data), "\n")
+func Run(input string) {
+	data2 := strings.Split(input, "\n")
 
 	var groups [][]int
 	var group []int
