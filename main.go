@@ -1,14 +1,14 @@
 package main
 
 import (
-	"aoc2022/Day2"
+	"aoc2022/Day3"
 	"os"
 )
 
 func main() {
-	data, err := os.ReadFile("Day2/day2_input.txt")
+	data, err := os.ReadFile("Day3/day3_input.txt")
 	if err != nil {
 		panic(err)
 	}
-	Day2.Run(string(data))
+	Day3.Run(string(data))
 }
